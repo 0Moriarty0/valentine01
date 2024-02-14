@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Valentine's Web for My Girlfriend</title>
+	<style>
+		h1 {
+			width: 50%;
+			font-size: 2.5em;
+			color: #8b2500;
+			text-align: center;
+			margin: 0 auto;
+			padding-top: 50px;
+		  }
+		  @media screen and (max-width: 600px) {
+			h1 {
+			  font-size: 2em;
+			}
+			button {
+			  font-size: 1.2em;
+			  padding: 10px;
+			}
+			#message-container {
+			  width: 80%;
+			}
+			#message-container textarea {
+			  height: 100px;
+			}
+		  }
+		body {
+			background-color: #ffcccc;
+			font-family: 'Brush Script MT', cursive;
+			text-align: center;
+			padding: 50px;
+		}
+		h1 {
+			color: #8b2500;
+		}
+		.heart-icon {
+			font-size: 50px;
+			color: #8b2500;
+			margin-bottom: 20px;
+		}
+		button {
+			background-color: #8b2500;
+			color: white;
+			border: none;
+			padding: 10px 20px;
+			font-size: 20px;
+			border-radius: 5px;
+			margin: 10px;
+			cursor: pointer;
+		}
+		button:hover {
+			background-color: #6a1b0d;
+		}
+		#message-container {
+			display: none;
+			background-color: white;
+			padding: 20px;
+			border: 1px solid #ccc;
+			margin: 20px auto;
+			max-width: 500px;
+		}
+		#message-container textarea {
+			width: 100%;
+			height: 100px;
+			resize: none;
+			border: none;
+			padding: 10px;
+			margin-bottom: 10px;
+		}
+		#message-container button {
+			background-color: #ffcccc;
+			color: #8b2500;
+			border: none;
+			padding: 10px 20px;
+			font-size: 20px;
+			border-radius: 5px;
+			margin-top: 10px;
+			cursor: pointer;
+		}
+		#message-container button:hover {
+			background-color: #ffb3a7;
+		}
+	</style>
+</head>
+<body>
+	<div class="heart-icon">&hearts;</div>
+	<h1>Will you be my valentine's?</h1>
+	<button id="sayYes">Yes</button>
+	<button id="sayNo">No</button>
+	<div id="message-container">
+		<textarea id="message" placeholder="Enter your message here..."></textarea>
+		<button id="sendMessage">Send</button>
+	</div>
+	<script>
+		const sayYesButton = document.getElementById("sayYes");
+	
